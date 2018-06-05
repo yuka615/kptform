@@ -4,7 +4,8 @@
 
     <h1>id = {{ $kpt->id }} の詳細ページ</h1>
 
-    <p>{{ $kpt->content }}</p>
+    <p>タイトル: {{ $kpt->title }}</p>
+    <p>KPT: {{ $kpt->content }}</p>
 
     {!! link_to_route('kpts.edit', 'このKPTを編集', ['id' => $kpt->id]) !!}
 

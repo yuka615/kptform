@@ -6,6 +6,9 @@
 
     {!! Form::model($kpt, ['route' => 'kpts.store']) !!}
 
+        {!! Form::label('title', 'タイトル:') !!}
+        {!! Form::text('title') !!}
+
         {!! Form::label('content', 'KPT:') !!}
         {!! Form::text('content') !!}
 

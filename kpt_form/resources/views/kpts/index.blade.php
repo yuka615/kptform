@@ -7,7 +7,7 @@
     @if (count($kpts) > 0)
         <ul>
             @foreach ($kpts as $kpt)
-                <li>{!! link_to_route('kpts.show', $kpt->id, ['id' => $kpt->id]) !!} : {{ $kpt->content }}</li></li>
+                 <li>{!! link_to_route('kpts.show', $kpt->id, ['id' => $kpt->id]) !!} : {{ $kpt->title }} > {{ $kpt->content }}</li>
             @endforeach
         </ul>
     @endif
