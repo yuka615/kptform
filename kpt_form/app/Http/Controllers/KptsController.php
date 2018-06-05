@@ -44,6 +44,10 @@ class KptsController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'content' => 'required|max:191',
+        ]);
+        
         $kpt = new Kpt;
         $kpt->content = $request->content;
         $kpt->save();
@@ -90,6 +94,10 @@ class KptsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'content' => 'required|max:191',
+        ]);
+        
         $kpt = Kpt::find($id);
         $kpt->content = $request->content;
         $kpt->save();
