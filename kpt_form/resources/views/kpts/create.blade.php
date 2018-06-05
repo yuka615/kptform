@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>KPT新規作成ページ</h1>
+    <h1>kpt新規作成ページ</h1>
 
     {!! Form::model($kpt, ['route' => 'kpts.store']) !!}
 
