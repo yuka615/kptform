@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'KptsController@index');
+
+Route::resource('kpts', 'KptsController');
