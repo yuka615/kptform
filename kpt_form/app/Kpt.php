@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kpt extends Model
 {
-    //
+    protected $table = 'kpts';
 }
