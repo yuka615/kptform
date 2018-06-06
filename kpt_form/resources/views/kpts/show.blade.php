@@ -47,11 +47,15 @@
             </table>
     </div>
 <div class='btn-toolbar'>
-    {!! link_to_route('kpts.edit', ' このKPTを編集', ['id' => $kpt->id], ['class' => 'btn btn-primary glyphicon glyphicon-edit']) !!}
+    
+    <!--先にゴミ箱を右に寄せる-->
 
-    {!! Form::model($kpt, ['route' => ['kpts.destroy', $kpt->id], 'method' => 'delete'])!!}
-        {!! Form::submit('削除', ['class' => 'btn btn-danger pull-right']) !!}
-    {!! Form::close() !!}
+        {!! Form::model($kpt, ['route' => ['kpts.destroy', $kpt->id], 'method' => 'delete'])!!}
+            {{ Form::button('<span class="glyphicon glyphicon-trash"></span>', array('class'=>'btn btn-danger pull-right', 'type'=>'submit')) }}
+        {!! Form::close() !!}
+    
+     
+        {!! link_to_route('kpts.edit', ' このKPTを編集', ['id' => $kpt->id], ['class' => 'btn btn-primary glyphicon glyphicon-edit']) !!}
 </div>
 
     

@@ -3,13 +3,6 @@
 @section('content')
 
 <!--CSS-->
-<style>
-
-body {
-    background-color: #2EFEF7;
-}
-    
-</style>
 
 
     <h1>KPT新規作成ページ</h1>
@@ -57,7 +50,7 @@ body {
         </div>
 
         <!--button-->
-        {!! Form::submit('投稿', ['class' => 'btn btn-info']) !!}
+        {{ Form::button('<span class="glyphicon glyphicon-send"> 投稿</span>', array('class'=>'btn btn-info pull-right', 'type'=>'submit')) }}
 
     {!! Form::close() !!}
     
