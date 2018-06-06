@@ -3,38 +3,53 @@
 @section('content')
 
     <h1>KPT新規作成ページ</h1>
-
-    {!! Form::model($kpt, ['route' => 'kpts.store']) !!}
-
-        {!! Form::label('title', 'タイトル:') !!}
-        {!! Form::text('title') !!}
-
-        {!! Form::label('content', 'KPT:') !!}
-        {!! Form::text('content') !!}
+    
+    <form class="form-horizontal">
         
+    {!! Form::model($kpt, ['route' => 'kpts.store']) !!}
+        
+        <div class="form-group">
         {!! Form::label('dates', 'Date:') !!}
         {!! Form::date('dates', \Carbon\Carbon::now()) !!}
+        </div>
         
+        
+        <div class="form-group">
         {!! Form::label('keep', 'Keep:') !!}
-        {!! Form::text('keep') !!}
+        <div style="white-space:pre-wrap;">
+        {!! Form::text('keep', null, ['class' => 'form-control']) !!}
+        </div>
+        </div>
         
+        <div class="form-group">
         {!! Form::label('problem', 'Problem:') !!}
-        {!! Form::text('problem') !!}
+        {!! Form::text('problem', null, ['class' => 'form-control']) !!}
+        </div>
         
+        <div class="form-group">
         {!! Form::label('Try', 'Try:') !!}
-        {!! Form::text('Try') !!}
+        {!! Form::text('Try', null, ['class' => 'form-control']) !!}
+        </div>
         
+        <div class="form-group">
         {!! Form::label('MVP', 'MVP:') !!}
-        {!! Form::text('MVP') !!}
+        {!! Form::text('MVP', null, ['class' => 'form-control']) !!}
+        </div>
         
+        <div class="form-group">
         {!! Form::label('reason', 'Reason:') !!}
-        {!! Form::text('reason') !!}
+        {!! Form::text('reason', null, ['class' => 'form-control']) !!}
+        </div>
         
+        <div class="form-group">
         {!! Form::label('want', 'Want:') !!}
-        {!! Form::text('want') !!}
+        {!! Form::text('want', null, ['class' => 'form-control']) !!}
+        </div>
 
         {!! Form::submit('投稿') !!}
 
     {!! Form::close() !!}
 
+    </form>
+    
 @endsection
