@@ -13,7 +13,7 @@
         {!! Form::text('content') !!}
         
         {!! Form::label('dates', 'Date:') !!}
-        {!! Form::text('dates') !!}
+        {!! Form::date('dates', \Carbon\Carbon::now()) !!}
         
         {!! Form::label('keep', 'Keep:') !!}
         {!! Form::text('keep') !!}
