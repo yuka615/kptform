@@ -27,7 +27,7 @@
             
             @endif
     
-            {!! link_to_route('kpts.create', '新規KPTの入力') !!}
+            {!! link_to_route('kpts.create', '新規KPTの入力', null, ['class' => 'btn btn-primary']) !!}
     
         </div>
     </div>
