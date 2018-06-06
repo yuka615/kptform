@@ -2,9 +2,21 @@
 
 @section('content')
 
-    <h1>KPT新規作成ページ</h1>
+<!--CSS-->
+<style>
+
+body {
+    background-color: #2EFEF7;
+}
     
-    <form class="form-horizontal">
+</style>
+
+
+    <h1>KPT新規作成ページ</h1>
+        
+    <div class="row">
+    <!--grid-->
+    <div class="col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
         
     {!! Form::model($kpt, ['route' => 'kpts.store']) !!}
         
@@ -16,9 +28,7 @@
         
         <div class="form-group">
         {!! Form::label('keep', 'Keep:') !!}
-        <div style="white-space:pre-wrap;">
         {!! Form::text('keep', null, ['class' => 'form-control']) !!}
-        </div>
         </div>
         
         <div class="form-group">
@@ -46,10 +56,13 @@
         {!! Form::text('want', null, ['class' => 'form-control']) !!}
         </div>
 
-        {!! Form::submit('投稿') !!}
+        <!--button-->
+        {!! Form::submit('投稿', ['class' => 'btn btn-info']) !!}
 
     {!! Form::close() !!}
+    
+    </div>
+    </div>
 
-    </form>
     
 @endsection
