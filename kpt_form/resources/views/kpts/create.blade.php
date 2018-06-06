@@ -28,32 +28,32 @@ body {
         
         <div class="form-group">
         {!! Form::label('keep', 'Keep:') !!}
-        {!! Form::text('keep', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('keep', null, ['class' => 'form-control']) !!}
         </div>
         
         <div class="form-group">
         {!! Form::label('problem', 'Problem:') !!}
-        {!! Form::text('problem', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('problem', null, ['class' => 'form-control']) !!}
         </div>
         
         <div class="form-group">
         {!! Form::label('Try', 'Try:') !!}
-        {!! Form::text('Try', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('Try', null, ['class' => 'form-control']) !!}
         </div>
         
         <div class="form-group">
         {!! Form::label('MVP', 'MVP:') !!}
-        {!! Form::text('MVP', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('MVP', null, ['class' => 'form-control']) !!}
         </div>
         
         <div class="form-group">
         {!! Form::label('reason', 'Reason:') !!}
-        {!! Form::text('reason', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('reason', null, ['class' => 'form-control']) !!}
         </div>
         
         <div class="form-group">
         {!! Form::label('want', 'Want:') !!}
-        {!! Form::text('want', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('want', null, ['class' => 'form-control']) !!}
         </div>
 
         <!--button-->
